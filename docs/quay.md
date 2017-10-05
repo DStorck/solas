@@ -115,7 +115,7 @@ echo -n 'Ea4fFjDreISLoNeWsdEg6PPMLVDh9GQNRROEBJ1G7559MRPJ3SSQFJ4F5FM4CKBS' | bas
 to bring this configuration into the cluster. There are several methods
 that will work, a simple one is to run:
 ```
-kubectl create secret generic quay-robot-zabra-rw --from-literal=username=c2Ftc3VuZ19jimN0KkphYnJdX3IK --from-literal=password=E4FDISLNWE6PPMLV9GQNRROEBJ1G7559MRPJ3SSQFJ4F5FM4CKB3YNOC6YVUF0PS
+kubectl create secret generic quay-robot-zabra-rw --namespace common-jenkins --from-literal=username=c2Ftc3VuZ19jimN0KkphYnJdX3IK --from-literal=password=E4FDISLNWE6PPMLV9GQNRROEBJ1G7559MRPJ3SSQFJ4F5FM4CKB3YNOC6YVUF0PS
 ```
 
 Then, if you have not already done so, head to the Jenkinsfile for your
