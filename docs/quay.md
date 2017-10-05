@@ -41,7 +41,7 @@ the container, is generally the artifact we expect users to interact with.
 * Make the repository public or private as appropriate.
 
 * Finish creating the repository by clicking `Create Public Repository` or
-`Create Private Repository`.
+`Create Private Repository`.XF
 
 ## Create a robot account
 
@@ -64,7 +64,7 @@ permissions for `zabra` are `zabra_rw`.
   * Grant the robot `write` access
   * While you have settings open, click `Owners` from the `Teams` section of the drop down menu and grant `admin` privileges
 
-![screenshot](images/quay/permissions.png)
+![screenshot](images/quay/zabra-permissions.png)
 
 ### Add Kubernetes Secret to Production Cluster for your robot
 
