@@ -41,7 +41,7 @@ the container, is generally the artifact we expect users to interact with.
 * Make the repository public or private as appropriate.
 
 * Finish creating the repository by clicking `Create Public Repository` or
-`Create Private Repository`.XF
+`Create Private Repository`.
 
 ## Create a robot account
 
