@@ -106,8 +106,8 @@ kubectl create secret generic quay-robot-zabra-container-rw --namespace common-j
 
   * Calculate base64 encoded username and password (the `tr` command may be required on OSX).
 ```
--echo -n 'samsung_cnct+zabra_r' | base64 | tr -d '\n'
--echo -n 'Ea4fFjDreISLoNeWsdEg6PPMLVDh9GQNRROEBJ1G7559MRPJ3SSQFJ4F5FM4CKBS' | base64 | tr -d '\n'
+echo -n 'samsung_cnct+zabra_r' | base64 | tr -d '\n'
+echo -n 'Ea4fFjDreISLoNeWsdEg6PPMLVDh9GQNRROEBJ1G7559MRPJ3SSQFJ4F5FM4CKBS' | base64 | tr -d '\n'
 ```
 
 
