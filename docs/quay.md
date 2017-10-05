@@ -62,7 +62,7 @@ permissions for `zabra` are `zabra_rw`.
   * Click Create Robot Account from the `Select a team or user` drop down menu
   * Name your robot according to the convention above
   * Grant the robot `write` access
-  * While you have settings open, click `Owners` from the `Teams` section of the drop down menu as well, and grant `admin` privileges
+  * While you have settings open, click `Owners` from the `Teams` section of the drop down menu and grant `admin` privileges
 
 ![screenshot](images/quay/permissions.png)
 
@@ -104,11 +104,12 @@ kubectl create secret generic quay-robot-zabra-container-rw --namespace common-j
 
   * Click on Docker Login
 
-  * Calculate base64 encoded username and password
+  * Calculate base64 encoded username and password (the `tr` command may be required on OSX).
 ```
-echo 'samsung_cnct+zabra_r' | base64
-echo 'Ea4fFjDreISLoNeWsdEg6PPMLVDh9GQNRROEBJ1G7559MRPJ3SSQFJ4F5FM4CKBS' | base64
+-echo -n 'samsung_cnct+zabra_r' | base64 | tr -d '\n'
+-echo -n 'Ea4fFjDreISLoNeWsdEg6PPMLVDh9GQNRROEBJ1G7559MRPJ3SSQFJ4F5FM4CKBS' | base64 | tr -d '\n'
 ```
+
 
   * Create a [Kubernetes Secret](https://kubernetes.io/docs/concepts/configuration/secret/)
 to bring this configuration into the cluster. There are several methods
